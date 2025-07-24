@@ -56,7 +56,7 @@ function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link key={item.path} href={item.path}>
-                <motion.a 
+                <motion.span 
                   className={`nav-link font-medium cursor-pointer transition-colors duration-300 ${
                     location === item.path ? 'text-estate-red' : 'hover:text-estate-red'
                   }`}
@@ -64,7 +64,7 @@ function Navigation() {
                   transition={{ duration: 0.2 }}
                 >
                   {item.name}
-                </motion.a>
+                </motion.span>
               </Link>
             ))}
           </div>
@@ -89,14 +89,14 @@ function Navigation() {
             <div className="py-4 space-y-2">
               {navItems.map((item) => (
                 <Link key={item.path} href={item.path}>
-                  <a 
-                    className={`block py-2 px-4 transition-colors duration-300 ${
+                  <span 
+                    className={`block py-2 px-4 transition-colors duration-300 cursor-pointer ${
                       location === item.path ? 'text-estate-red bg-gray-700' : 'hover:text-estate-red hover:bg-gray-700'
                     }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.name}
-                  </a>
+                  </span>
                 </Link>
               ))}
             </div>
