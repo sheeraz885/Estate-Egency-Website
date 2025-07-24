@@ -285,7 +285,7 @@ function Contacts() {
                 address: "456 Sunset Blvd, CA 90028",
                 phone: "+1 (555) 234-5678",
                 email: "la@yourestate.com",
-                image: "https://images.unsplash.com/photo-1444723121911-77017e3f0d8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"
+                image: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200"
               },
               {
                 city: "Miami",
