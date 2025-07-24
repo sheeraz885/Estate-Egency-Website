@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(210, 11%, 15%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215, 13%, 45%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 11%, 15%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(210, 11%, 15%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(222, 84%, 5%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(222, 84%, 5%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(215, 20%, 65%);
+  --radius: 0.5rem;
+  
+  /* Custom ESTATE theme colors */
+  --estate-red: hsl(6, 78%, 57%);
+  --estate-dark: hsl(210, 29%, 24%);
+  --estate-gray: hsl(209, 18%, 30%);
+}
+
+.dark {
+  --background: hsl(222, 84%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 5%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(210, 40%, 2%);
+  --secondary: hsl(217, 32%, 17%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 32%, 17%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(217, 32%, 17%);
+  
+  /* Custom ESTATE theme colors for dark mode */
+  --estate-red: hsl(6, 78%, 57%);
+  --estate-dark: hsl(210, 29%, 24%);
+  --estate-gray: hsl(209, 18%, 30%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-estate-red {
+    background-color: hsl(6, 78%, 57%);
+  }
+  
+  .text-estate-red {
+    color: hsl(6, 78%, 57%);
+  }
+  
+  .bg-estate-dark {
+    background-color: hsl(210, 29%, 24%);
+  }
+  
+  .text-estate-dark {
+    color: hsl(210, 29%, 24%);
+  }
+  
+  .bg-estate-gray {
+    background-color: hsl(209, 18%, 30%);
+  }
+  
+  .text-estate-gray {
+    color: hsl(209, 18%, 30%);
+  }
+  
+  .border-estate-red {
+    border-color: hsl(6, 78%, 57%);
+  }
+  
+  .border-estate-dark {
+    border-color: hsl(210, 29%, 24%);
+  }
+  
+  .border-estate-gray {
+    border-color: hsl(209, 18%, 30%);
+  }
+  
+  .accent-estate-red {
+    accent-color: hsl(6, 78%, 57%);
+  }
+  
+  .hover\:bg-estate-red:hover {
+    background-color: hsl(6, 78%, 57%);
+  }
+  
+  .hover\:text-estate-red:hover {
+    color: hsl(6, 78%, 57%);
+  }
+  
+  .focus\:ring-estate-red:focus {
+    --tw-ring-color: hsl(6, 78%, 57%);
+  }
+}
+
+/* Custom animations and transitions for the ESTATE theme */
+@layer components {
+  .property-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .property-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .service-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .service-card:hover {
+    transform: translateY(-12px);
+  }
+  
+  .blog-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .blog-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .nav-link:hover {
+    color: hsl(6, 78%, 57%);
+  }
+  
+  .hero-overlay {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  }
+  
+  .loading-spinner {
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { 
+      transform: rotate(0deg); 
+    }
+    to { 
+      transform: rotate(360deg); 
+    }
+  }
+}
+
+/* Font family for Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(210, 40%, 96%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(6, 78%, 57%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(6, 78%, 47%);
+}

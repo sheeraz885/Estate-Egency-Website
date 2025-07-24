@@ -1,0 +1,80 @@
+export const properties = [
+  {
+    id: 1,
+    title: "87 Mishaum Point Rd",
+    location: "Dartmouth, MA 02748",
+    price: "$1,249,000",
+    type: "HOUSE FOR SALE",
+    status: "sale",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+    sqft: "1,286",
+    bedrooms: 2,
+    bathrooms: 3,
+    garage: 2
+  },
+  {
+    id: 2,
+    title: "9615 Shore Rd APT 8A",
+    location: "Brooklyn, NY 11209",
+    price: "$2,189,000",
+    type: "TOWNHOUSE FOR SALE",
+    status: "sale",
+    image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+    sqft: "1,286",
+    bedrooms: 2,
+    bathrooms: 3,
+    garage: 3
+  },
+  {
+    id: 3,
+    title: "80646 Via Pessaro",
+    location: "La Quinta, CA 92443",
+    price: "$3,449/mo",
+    type: "HOUSE FOR RENT",
+    status: "rent",
+    image: "https://images.unsplash.com/photo-1577495508048-b635879837f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+    sqft: "886",
+    bedrooms: 2,
+    bathrooms: 3,
+    garage: 2
+  },
+  {
+    id: 4,
+    title: "Modern Villa Estate",
+    location: "Beverly Hills, CA 90210",
+    price: "$4,850,000",
+    type: "VILLA FOR SALE",
+    status: "sale",
+    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+    sqft: "3,200",
+    bedrooms: 5,
+    bathrooms: 4,
+    garage: 3
+  },
+  {
+    id: 5,
+    title: "Downtown Loft",
+    location: "Manhattan, NY 10001",
+    price: "$2,850/mo",
+    type: "LOFT FOR RENT",
+    status: "rent",
+    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+    sqft: "1,100",
+    bedrooms: 1,
+    bathrooms: 1,
+    garage: 0
+  },
+  {
+    id: 6,
+    title: "Suburban Family Home",
+    location: "Austin, TX 78704",
+    price: "$675,000",
+    type: "HOUSE FOR SALE",
+    status: "sale",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+    sqft: "2,100",
+    bedrooms: 4,
+    bathrooms: 3,
+    garage: 2
+  }
+];
