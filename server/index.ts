@@ -60,11 +60,10 @@ app.use((req, res, next) => {
   // Other ports are firewalled. Default to 7891 for local development, 5000 for production.
   // this serves both the API and the client.
   const port = parseInt(process.env.PORT || (process.env.NODE_ENV === 'development' ? '7891' : '5000'), 10);
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
-    log(`serving on port ${port}`);
-  });
+server.listen({
+  port,
+  host: "0.0.0.0",
+}, () => {
+  log(`serving on port ${port}`);
+});
 })();
